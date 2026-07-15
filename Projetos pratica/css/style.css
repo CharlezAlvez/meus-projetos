@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body
+{
+   
+   background-color: rgba(60, 10, 87, 0.8);
+}
+
+.barra-navegaçao
+{
+    position: fixed;
+    width: 100%;
+    background: #9306d4;
+    background: linear-gradient(90deg, rgb(105, 7, 151) 0%, rgba(4, 3, 64, 1) 0%, rgba(84, 9, 121, 1) 0%, rgb(131, 11, 179) 67%) ;
+  padding: 1.5rem;
+  opacity: 0.9;
+  top: 0;
+  z-index: 100%;
+ 
+}
+
+.menu
+{
+    display: flex;
+   list-style: none;
+   gap: 3rem;
+   justify-content: center;
+   
+}
+
+.link-menu 
+{ 
+  
+   font-size:20px;
+   color: white;
+   text-decoration: none;
+  
+}
+

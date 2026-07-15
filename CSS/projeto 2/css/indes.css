@@ -1,0 +1,103 @@
+
+html
+{
+    font-family: helvetica;
+    background-color: rgba(99, 58, 5, 0.808);
+}
+/*continer pai*/
+.container-pai
+{
+   max-width: 1100px;
+   background-color: rgba(54, 78, 15, 0.747);
+    position: relative;
+    margin: 50px auto;
+    padding: 20px 50px
+}
+
+/*titulo*/
+.titulo
+{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.titleoftexto
+{
+    text-align: center;
+   font-style: italic;
+   margin-top: 25px;
+}
+
+/*imagem principal*/
+
+.img
+{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.img figcaption
+{
+    font-style: italic
+}
+
+/*biografia*/
+
+.biografia-game
+{
+    padding: 25px 0;
+    border: 1px 0;
+    
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+/*container mençoes*/
+
+.container2 
+{
+    padding: 25px 0;
+    background-color:  rgba(99, 58, 5, 0.808);
+   
+}
+
+.container2 blockquote
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+.container2 p
+{
+    font-style: italic;
+    text-align: center;
+}
+
+/*modos de jogo*/
+
+.modos-jogo
+{
+    padding: 25px 0 ;
+    margin: 25px 0;
+   }
+
+/*container final*/
+.container3
+{   margin: 25px 0;
+     padding: 25px 0;
+    background-color:  rgba(99, 58, 5, 0.808);
+}
+
+.container3 blockquote
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+.container3 p
+{
+    font-style: italic;
+    text-align: center;
+}

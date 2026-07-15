@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+     <h2>Formularios Html</h2>
+
+<!--formulario com input tipo texto-->
+<!--atributos da tag FORM (get ou post)-->
+<form action="/enviar/formulario" method="post">
+<!--formulario com input tipo texto-->
+   <div>
+     <label>Nome:</label>
+   <input type="text">
+   </div>
+<!--atributo nome-->
+<div>
+  <!--atributo label-->
+  <label for="age">idade:</label>
+  <input type="text"  name="age">
+</div>
+<!--tag select-->
+<div>
+  <label for="job">selecione sua profissao</label>
+   <select name="job" >
+<option value="programador" >programador</option>
+<option value="carpinteiro"selected>carpinteiro</option>
+<option value="médico">médico</option>
+<option value="açougueiro">açougueiro</option>
+
+   </select>
+
+</div>
+<!--atributo selected-->
+<div>
+  <label for="contrato">Você leu os termos de contrato?</label>
+  <select name="contract"><option value="sim">Sim</option>
+  <option value="nao" selected>Não</option></select>
+</div>
+
+<!--multiplas opçoes-->
+<div>
+<label for="itens">selecione seus itens que deseja comprar:</label>
+<select name="intes" multiple>
+  <option value="pera">pera</option>
+  <option value="maça">maçã</option>
+  <option value="morango">morango</option>
+  <option value="banana">banana</option>
+
+</select>
+</div>
+<!--text area-->
+<div>
+<label for="text area">fale mais sobre Você:</label>
+<textarea name="Sobre Você" cols="30" rows="10"></textarea>
+
+</div>
+<!--fieldset e legend-->
+<div>
+<fieldset>
+<legend>Preencha com sua informaçoes</legend>
+<label for="firstname">Nome</label>
+<input type="text" name="firstname">
+<label for="lastname">Sobrenome</label>
+ <input type="text" name="lastname">
+</fieldset>
+
+
+</div>
+
+<!--datalista-->
+<div>
+  <label for="sabor">Escolha seu sabor </label>
+  <input type="text"  list="sabores" name="sabor">
+  <datalist id="sabores">
+    <option value="caramelo"></option>
+    <option value="morango"></option>
+    <option value="flocos"></option>
+    <option value="iceblue"></option>
+    <option value="açaí"></option>
+  </datalist>
+</div>
+
+<!--atributo password ( senha)-->
+<div>
+
+  <label for="senha">digite sua senha</label>
+  <input type="password" name="senha">
+
+</div>
+
+<!--resetando formulario-->
+
+  <input type="reset" name="resetar">
+  
+  <!--radio butom-->
+  <div>
+    <label for="car_model">escolha seu modelo de carro</label>
+      <div class="radio">
+    <input type="radio" value="bmw" name="car_model">
+    <label for="bmw">BMW</label>
+      </div>
+        <div class="radio">
+    <input type="radio" value="audi" name="car_model">
+    <label for="audi">Audi</label>
+      </div>
+        <div class="radio">
+    <input type="radio" value="porshe" name="car_model">
+    <label for="porshe">Porshe</label>
+      </div>
+        <div class="radio">
+    <input type="radio" value="ferrari" name="car_model">
+    <label for="farrari">Ferrari</label>
+
+      </div>
+  </div>
+
+  <!--checkbox-->
+
+  <div>
+
+    <label for="optionals">Opcionais do carro:</label>
+    <div class="radio">
+    <input type="checkbox"  name="optionals[]" value="big_tires">
+    <label for="big_tires">Pneus Grandes</label>
+</div>
+     <div class="radio">
+    <input type="checkbox"  name="optionals[]" value="comum">
+    <label for="comum">Pneus comuns</label>
+</div>
+</div>
+     <div class="radio">
+    <input type="checkbox"  name="optionals[]" value="nitros">
+    <label for="nitros">nitros pneus</label>
+</div>
+</div>
+     <div class="radio">
+    <input type="checkbox"  name="optionals[]" value="antederrapa">
+    <label for="antederrapa">anti-derrapantes</label>
+</div>
+
+  </div>
+
+  <!--input data-->
+<div>
+  <label for="aniversario">Data de Aniversario</label>
+  <input type="date"  name="aniversario">
+</div>
+
+<!--inpute file para arquivos-->
+<div>
+  <label for="imagem">Ensira a sua imagem</label>
+  <input type="file" name="imagem">
+
+</div>
+<!--inputespecifico para numeros-->
+<div>
+  <label for="salario">Quanto você ganha por mês trabalhado?</label>
+  <input type="number" name="salario">
+</div>
+
+<!--input tipo email-->
+<div>
+  <label for="email">digite seu endereço de email</label>
+  <input type="email" name="email">
+</div>
+
+<!--value-->
+<div>
+  <label for="value">digite um valor</label>
+  <input type="text" value="o meu valor é este" name="value">
+</div>
+
+<!--atributo disable-->
+<div>
+  <P>tente preencher algo aqui</P>
+  <input type="text" value="nao precisa digitar aqui" disabled>
+</div>
+
+<!--PlaceHolder-->
+
+<div>
+  <label for="empregoatual">Digite aqui seu emprego atual</label>
+  <input type="text" placeholder="Qual sua profissao atual?" name="empregoatual">
+</div>
+
+<!--required-->
+<div>
+  <label for="anodenascença">digite seu ano de nascimento</label>
+  <input type="text" placeholder="digite o ano que voce nasceu" required> 
+</div>
+<!--envio de formulario-->
+<input type="submit" value="enviar">
+ </form>
+
+
+
+
+</body>
+</html>

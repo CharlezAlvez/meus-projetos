@@ -1,0 +1,96 @@
+html
+{
+    font-family: helvetica;
+    background-color: #ddd;
+}
+
+.container-pai
+{
+    max-width: 1100px;
+    background-color: white;
+    position: relative;
+    margin: 50px auto;
+    padding: 20px 50px;
+
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+/*cabeçalho*/
+
+.cabeçalho
+{
+    text-align: center;
+}
+
+.title
+{
+    text-align: center;
+}
+.info-title
+{
+    text-align: center;
+    font-style: italic;
+}
+
+/*imagem destaque*/
+.first-img
+{
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*biografia container*/
+
+.biografia-container
+{
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+} 
+
+/*bio2 container*/
+
+.bio2-container
+{   padding: 30px ;
+    background-color: #ddd;
+
+}
+
+.bio2-container blockquote
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bio2-container p
+{
+    font-style: italic;
+}
+
+/*curiosidades*/
+
+.curiosidades
+{
+    padding: 25px 0 ;
+    margin: 25px 0;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1 px dashed #ddd;
+}
+.curiosidades li
+{
+    height: 30px;
+}
+
+/*rodapé img*/
+
+.rodapé-img
+{
+     text-align: center;
+    margin-top: 30px;
+    font-style: italic;
+}

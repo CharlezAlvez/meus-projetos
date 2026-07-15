@@ -1,0 +1,181 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body
+{
+    background-color: #fafafa;
+}
+
+/*main container*/
+#main-container
+{
+   display: flex;
+   margin-top: 30px;
+}
+
+#img-container, #form-container
+{
+    flex: 1 1 0;
+    width: 50%;
+}
+
+#img-container
+{
+    text-align: right;
+}
+
+#img-container img
+{
+    width: 100%;
+    margin-right: 15px;
+    margin-top: 25px;
+    max-width: 380px;
+}
+
+#form-container
+{
+    text-align: center;
+}
+
+
+/*login-form*/
+
+#forma-box
+{
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+}
+
+#img-container
+{
+    width: 240px;
+    height: 51px;
+    margin: 30px auto 12px;
+}
+
+#fomr-login
+{
+  margin-top: 20px;
+}
+
+#fomr-login input
+{
+    display: block;
+    font-size: 12px;
+    padding: 12px 9px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    width: 286px;
+    margin: 5px auto;
+}
+
+#fomr-login input[type="submit"]
+{
+    background-color: #B2dFFc;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 30px;
+    padding: 0;
+    font-weight: bold;
+}
+
+
+.separator{
+
+    position: relative;
+}
+
+.line
+{
+    border-top: 1px solid #dbdbdb;
+    width: 268px;
+    margin: 20px auto 35px;
+
+}
+
+.separator span{
+    position: absolute;
+    text-transform: uppercase;
+    color: #BBBB;
+    background-color: #fff;
+    top: -6px;
+    margin-left: -25px;
+}
+
+/*facebook login*/
+#facebooke-login
+{
+    margin-bottom: 15px;
+}
+
+#facebooke-login a{
+    text-decoration: none;
+    color: #385185;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#facebooke-login img{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+
+}
+
+#facebooke-login span{
+
+     font-weight: bold;
+     font-size: 13px;
+     margin-top: 1px;
+}
+
+.logo-insta img{
+    width: 220px;
+    
+}
+
+
+#forgot-pass
+{
+    margin-bottom: 25px;
+    font-size: 12px;
+
+}
+
+#forgot-pass a 
+{
+    text-decoration: none;
+    color: #373799;
+}
+
+#register-container
+{
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+#register-container p
+{
+    font-size: 14px;
+    color: #262626;
+}
+
+#register-container a 
+{
+    color: #4a95f6;
+    font-weight: bold;
+    text-decoration: none;
+}

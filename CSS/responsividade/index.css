@@ -1,0 +1,38 @@
+/*media qquery*/
+h1 {
+    color: red;
+}
+
+@media screen and (max-width:500px) {
+    h1{
+        color: blue
+    }
+}
+
+/*min width*/
+
+p{
+    color: blue;
+
+}
+
+@media screen and (min-width:800px) {
+    p {
+        color: red
+    }
+}
+
+/*landscape*/
+
+h3
+{
+    display: none;
+}
+
+@media screen and ( orientation: landscape)
+{
+   h3{
+    display: block;
+   }
+}
+    

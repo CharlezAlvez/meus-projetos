@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Pro</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <h2>AdminPro</h2>
+    <ul>
+      <li class="active">Dashboard</li>
+      <li>Usuários</li>
+      <li>Relatórios</li>
+      <li>Configurações</li>
+    </ul>
+  </aside>
+
+  <!-- Conteúdo -->
+  <div class="main">
+
+    <header>
+      <button id="toggleSidebar">☰</button>
+      <h1>Dashboard</h1>
+      <div class="actions">
+        <button id="darkModeToggle">🌙</button>
+        <button id="openModal">+ Usuário</button>
+      </div>
+    </header>
+
+    <!-- Cards -->
+    <section class="cards">
+      <div class="card">
+        <h3>Usuários</h3>
+        <p id="totalUsers">0</p>
+      </div>
+      <div class="card">
+        <h3>Receita</h3>
+        <p>R$ 18.430</p>
+      </div>
+      <div class="card">
+        <h3>Pedidos</h3>
+        <p>540</p>
+      </div>
+      <div class="card">
+        <h3>Crescimento</h3>
+        <p>+12%</p>
+      </div>
+    </section>
+
+    <!-- Gráficos -->
+    <section class="charts">
+      <canvas id="salesChart"></canvas>
+      <canvas id="usersChart"></canvas>
+    </section>
+
+    <!-- Tabela -->
+    <section class="table-section">
+      <div class="table-header">
+        <h2>Usuários</h2>
+        <input type="text" id="search" placeholder="Buscar...">
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody id="userTable"></tbody>
+      </table>
+    </section>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <h2>Novo Usuário</h2>
+    <input type="text" id="name" placeholder="Nome">
+    <input type="email" id="email" placeholder="Email">
+    <div class="modal-buttons">
+      <button id="addUser">Salvar</button>
+      <button id="closeModal">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
